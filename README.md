@@ -9,6 +9,7 @@
 > **本仓库开源的资料内容包括：**
 >
 > * 瀚文本体硬件设计的10块PCB设计源文件，提供立创EDA专业版的文件格式
+> * 外壳设计结构文件
 > * 键盘本体的固件源码（已相对完善）
 > * Dynamic组件的固件源码（已完成框架，更多APP扩展WIP）
 > * 键盘二次开发SDK（开发中）
@@ -19,3 +20,10 @@
 >
 > * [I Made A Customized Modular Keyboard ! - YouTube](https://www.youtube.com/watch?v=mGShD9ZER1c)
 
+## 0. 项目说明
+
+## 1. 硬件设计
+
+## 2. 固件设计
+
+## 3. SDK设计 & 二次开发
