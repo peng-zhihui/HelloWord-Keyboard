@@ -1,0 +1,177 @@
+Keyboard
+NORMAL
+00	Reserved (no event indicated)
+01	Keyboard ErrorRollOver
+02	Keyboard POSTFail
+03	Keyboard ErrorUndefine
+04	Keyboard a and A
+05	Keyboard b and B
+06	Keyboard c and C
+07	Keyboard d and D
+08	Keyboard e and E
+09	Keyboard f and F
+0A	Keyboard g and G
+0B	Keyboard h and H
+0C	Keyboard i and I
+0D	Keyboard j and J
+0E	Keyboard k and K
+0F	Keyboard l and L
+10	Keyboard m and M
+11	Keyboard n and N
+12	Keyboard o and O
+13	Keyboard p and P
+14	Keyboard q and Q
+15	Keyboard r and R
+16	Keyboard s and S
+17	Keyboard t and T
+18	Keyboard u and U
+19	Keyboard v and V
+1A	Keyboard w and W
+1B	Keyboard x and X
+1C	Keyboard y and Y
+1D	Keyboard z and Z
+1E	Keyboard 1 and !
+1F	Keyboard 2 and @
+20	Keyboard 3 and #
+21	Keyboard 4 and $
+22	Keyboard 5 and %
+23	Keyboard 6 and ^
+24	Keyboard 7 and &
+25	Keyboard 8 and *
+26	Keyboard 9 and (
+27	Keyboard 0 and )
+28	Keyboard Return (ENTER)
+29	Keyboard ESCAPE
+2A	Keyboard DELETE (Backspace)
+2B	Keyboard Tab
+2C	Keyboard Spacebar
+2D	Keyboard - and (underscore)
+2E	Keyboard = and +
+2F	Keyboard [ and {
+30	Keyboard ] and }
+31	Keyboard \ and |
+32	Keyboard Non-US # and ~
+33	Keyboard ; and :
+34	Keyboard ' and "
+35	Keyboard Grave Accent and Tilde
+36	Keyboard, and <
+37	Keyboard . and >
+38	Keyboard / and ?
+39	Keyboard Caps Lock
+3A	Keyboard F1
+3B	Keyboard F2
+3C	Keyboard F3
+3D	Keyboard F4
+3E	Keyboard F5
+3F	Keyboard F6
+40	Keyboard F7
+41	Keyboard F8
+42	Keyboard F9
+43	Keyboard F10
+44	Keyboard F11
+45	Keyboard F12
+46	Keyboard PrintScreen
+47	Keyboard Scroll Lock
+48	Keyboard Pause
+49	Keyboard Insert
+4A	Keyboard Home
+4B	Keyboard PageUp
+4C	Keyboard Delete Forward
+4D	Keyboard End
+4E	Keyboard PageDown
+4F	Keyboard RightArrow
+50	Keyboard LeftArrow
+51	Keyboard DownArrow
+52	Keyboard UpArrow
+53	Keypad Num Lock and Clear
+54	Keypad /
+55	Keypad *
+56	Keypad -
+57	Keypad +
+58	Keypad ENTER
+59	Keypad 1 and End
+5A	Keypad 2 and Down Arrow
+5B	Keypad 3 and PageDn
+5C	Keypad 4 and Left Arrow
+5D	Keypad 5
+5E	Keypad 6 and Right Arrow
+5F	Keypad 7 and Home
+60	Keypad 8 and Up Arrow
+61	Keypad 9 and PageUp
+62	Keypad 0 and Insert
+63	Keypad . and Delete
+64	Keyboard Non-US \ and |
+65	Keyboard Application
+66	Keyboard Power
+67	Keypad =
+68	Keyboard F13
+69	Keyboard F14
+6A	Keyboard F15
+6B	Keyboard F16
+6C	Keyboard F17
+6D	Keyboard F18
+6E	Keyboard F19
+6F	Keyboard F20
+70	Keyboard F21
+71	Keyboard F22
+72	Keyboard F23
+73	Keyboard F24
+74	Keyboard Execute
+75	Keyboard Help
+76	Keyboard Menu
+77	Keyboard Select
+78	Keyboard Stop
+79	Keyboard Again
+7A	Keyboard Undo
+7B	Keyboard Cut
+7C	Keyboard Copy
+7D	Keyboard Paste
+7E	Keyboard Find
+7F	Keyboard Mute
+80	Keyboard Volume Up
+81	Keyboard Volume Down
+82	Keyboard Locking Caps Lock
+83	Keyboard Locking Num Lock
+84	Keyboard Locking Scroll Lock
+85	Keypad Comma
+86	Keypad Equal Sign
+87	Keyboard Kanji1
+88	Keyboard Kanji2
+89	Keyboard Kanji3
+8A	Keyboard Kanji4
+8B	Keyboard Kanji5
+8C	Keyboard Kanji6
+8D	Keyboard Kanji7
+8E	Keyboard Kanji8
+8F	Keyboard Kanji9
+90	Keyboard LANG1
+91	Keyboard LANG2
+92	Keyboard LANG3
+93	Keyboard LANG4
+94	Keyboard LANG5
+95	Keyboard LANG6
+96	Keyboard LANG7
+97	Keyboard LANG8
+98	Keyboard LANG9
+99	Keyboard Alternate Erase
+9A	Keyboard SysReq/Attention
+9B	Keyboard Cancel
+9C	Keyboard Clear
+9D	Keyboard Prior
+9E	Keyboard Return
+9F	Keyboard Separator
+A0	Keyboard Out
+A1	Keyboard Oper
+A2	Keyboard Clear/Again
+A3	Keyboard CrSel/Props
+A4	Keyboard ExSel
+A5-DF	Reserved
+E0	Keyboard LeftControl
+E1	Keyboard LeftShift
+E2	Keyboard LeftAlt
+E3	Keyboard Left GUI
+E4	Keyboard RightControl
+E5	Keyboard RightShift
+E6	Keyboard RightAlt
+E7	Keyboard Right GUI
+E8-FFFF	Reserved

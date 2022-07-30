@@ -1,0 +1,6 @@
+VESA Command
+NORMAL
+00	Undefined
+01	Settings
+02	Degauss
+03-FFFF	Reserved

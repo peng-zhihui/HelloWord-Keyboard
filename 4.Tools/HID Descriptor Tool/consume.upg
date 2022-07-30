@@ -1,0 +1,131 @@
+Consumer Devices
+NORMAL
+00	Unassigned
+01	Consumer Control
+02	Numeric Key Pad
+04-1F	Reserved
+20	+10
+21	+100
+22	AM/PM
+23-3F	Reserved
+30	Power
+31	Reset
+32	Sleep
+33	Sleep After
+34	Sleep Mode
+35	Illumination
+36	Function Buttons
+37-3F	Reserved
+40	Menu
+41	Menu  Pick
+42	Menu Up
+43	Menu Down
+44	Menu Left
+45	Menu Right
+46	Menu Escape
+47	Menu Value Increase
+48	Menu Value Decrease
+49-5F	Reserved
+60	Data On Screen
+61	Closed Caption
+62	Closed Caption Select
+63	VCR/TV
+64	Broadcast Mode
+65	Snapshot
+66	Still
+67-7F	Reserved
+80	Selection
+81	Assign Selection
+82	Mode Step
+83	Recall Last
+84	Enter Channel
+85	Order Movie
+86	Channel
+87	Media Selection
+88	Media Select Computer
+89	Media Select TV
+8A	Media Select WWW
+8B	Media Select DVD
+8C	Media Select Telephone
+8D	Media Select Program Guide
+8E	Media Select Video Phone
+8F	Media Select Games
+90	Media Select Messages
+91	Media Select CD
+92	Media Select VCR
+93	Media Select Tuner
+94	Quit
+95	Help
+96	Media Select Tape
+97	Media Select Cable
+98	Media Select Satellite
+99	Media Select Security
+9A	Media Select Home
+9B	Media Select Call
+9C	Channel Increment
+9D	Channel Decrement
+9E-9F	Reserved
+A0	VCR Plus
+A1	Once
+A2	Daily
+A3	Weekly
+A4	Monthly
+A5-AF	Reserved
+B0	Play
+B1	Pause
+B2	Record
+B3	Fast Forward
+B4	Rewind
+B5	Scan Next Track
+B6	Scan Previous Track
+B7	Stop
+B8	Eject
+B9	Random Play
+BA	Select Disc
+BB	Enter Disc
+BC	Repeat
+BD	Tracking
+BE	Track Normal
+BF	Slow Tracking
+C0	Frame Forward
+C1	Frame Back
+C2	Mark
+C3	Clear Mark
+C4	Repeat From Mark
+C5	Return To Mark
+C6	Search Mark Forward
+C7	Search Mark Backwards
+C8	Counter Reset
+C9	Show Counter
+CA	Tracking Increment
+CB	Tracking Decrement
+CC-DF	Reserved
+E0	Volume
+E1	Balance
+E2	Mute
+E3	Bass
+E4	Treble
+E5	Bass Boost
+E6	Surround Mode
+E7	Loudness
+E8	MPX
+E9	Volume Up
+EA	Volume Down
+EB-EF	Reserved
+F0	Speed Select
+F1	Playback Speed
+F2	Standard Play
+F3	Long Play
+F4	Extended Play
+F5	Slow
+F6-FF	Reserved
+100	Fan Enable
+101	Fan Speed
+102	Light
+103	Light Illumination Level
+104	Climate Control Enable
+105	Room Temperature
+106	Security Enable
+107	Fire Alarm
+108	Police Alarm
+109-FFFF	Reserved

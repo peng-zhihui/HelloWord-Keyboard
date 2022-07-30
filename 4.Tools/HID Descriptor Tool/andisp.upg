@@ -1,0 +1,40 @@
+Alphnumeric Display
+NORMAL
+00	Undefined
+01	Alphanumeric Display
+02-1F	Reserved
+20	Display Attributes Report
+21	ASCII Character Set
+22	Data Read Back
+23	Font Read Back
+24	Display Control Report
+25	Clear Display
+26	Display Enable
+27	Screen Saver Delay
+28	Screen Saver Enable
+29	Vertical Scroll
+2A	Horizontal Scroll
+2B	Character Report
+2C	Display Data
+2D	Display Status
+2E	Stat Not Ready
+2F	Stat Ready
+30	Err Not a loadable character
+31	Err Font data cannot be read
+32	Cursor Position Report
+33	Row
+34	Column
+35	Rows
+36	Columns
+37	Cursor Pixel Positioning
+38	Cursor Mode
+39	Cursor Enable
+3A	Cursor Blink
+3B	Font Report
+3C	Font Data
+3D	Character Width
+3E	Character Height
+3F	Character Spacing Horizontal
+40	Character Spacing Vertical
+41	Unicode Character Set
+42-FFFF	Reserved

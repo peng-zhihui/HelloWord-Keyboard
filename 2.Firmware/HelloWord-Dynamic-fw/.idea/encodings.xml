@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/Core/Src/syscalls.c" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/Ctrl" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/Ctrl/Signal/buzzer.cpp" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Platform/Driver" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/Platform/Sensor" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/Platform/Utils/Driver" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/Platform/Utils/Sensor" charset="GBK" />
+  </component>
+</project>

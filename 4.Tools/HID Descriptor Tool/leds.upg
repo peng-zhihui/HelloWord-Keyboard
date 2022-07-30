@@ -1,0 +1,79 @@
+LEDs
+NORMAL
+00	Undefined
+01	Num Lock
+02	Caps Lock
+03	Scroll Lock
+04	Compose
+05	Kana
+06	Power
+07	Shift
+08	Do Not Disturb
+09	Mute
+0A	Tone Enable
+0B	High Cut Filter
+0C	Low Cut Filter
+0D	Equalizer Enable
+0E	Sound Field On
+0F	Surround field On
+10	Repeat
+11	Stereo
+12	Sampling Rate Detect
+13	Spinning
+14	CAV
+15	CLV
+16	Recording Format Detect
+17	Off-Hook
+18	Ring
+19	Message Waiting
+1A	Data Mode
+1B	Battery Operation
+1C	Battery OK
+1D	Battery Low
+1E	Speaker
+1F	Head Set
+20	Hold
+21	Microphone
+22	Coverage
+23	Night Mode
+24	Send Calls
+25	Call Pickup
+26	Conference
+27	Stand-by
+28	Camera On
+29	Camera Off
+2A	On-Line
+2B	Off-Line
+2C	Busy
+2D	Ready
+2E	Paper-Out
+2F	Paper-Jam
+30	Remote
+31	Forward
+32	Reverse
+33	Stop
+34	Rewind
+35	Fast Forward
+36	Play
+37	Pause
+38	Record
+39	Error
+3A	Usage Selected Indicator
+3B	Usage In Use Indicator
+3C	Usage Multi Mode Indicator
+3D	Indicator On
+3E	Indicator Flash
+3F	Indicator Slow Blink
+40	Indicator Fast Blink
+41	Indicator Off
+42	Flash On Time
+43	Slow Blink On Time
+44	Slow Blink Off Time
+45	Fast Blink On Time
+46	Fast Blink Off Time
+47	Usage Indicator Color
+48	Red
+49	Green
+4A	Amber
+4B	Generic Indicator
+4C-FFFF	Reserved

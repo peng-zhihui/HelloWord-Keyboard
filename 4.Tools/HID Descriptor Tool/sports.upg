@@ -1,0 +1,40 @@
+Sports Controls
+NORMAL
+00	Unidentified
+01	Baseball Bat
+02	Golf Club
+03	Rowing Machine
+04	Treadmill
+05-2F	Reserved
+30	Oar
+31	Slope
+32	Rate
+33	Stick Speed
+34	Stick Face Angle
+35	Stick Heel/Toe
+36	Stick Follow Through
+37	Stick Tempo
+38	Stick Type
+39	Stick Height
+3A-4F	Reserved
+50	Putter
+51	1 Iron
+52	2 Iron
+53	3 Iron
+54	4 Iron
+55	5 Iron
+56	6 Iron
+57	7 Iron
+58	8 Iron
+59	9 Iron
+59	10 Iron
+5A	11 Iron
+5B	Sand Wedge
+5C	Loft Wedge
+5D	Power Wedge
+5E	1 Wood
+5F	3 Wood
+60	5 Wood
+61	7 Wood
+62	9 Wood
+63-FFFF	reserved

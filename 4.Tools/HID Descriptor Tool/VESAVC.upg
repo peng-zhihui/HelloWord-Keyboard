@@ -1,0 +1,39 @@
+VESA Virtual Controls
+NORMAL
+00-0F	Reserved
+10	Brightness
+12	Contrast
+16	Video Gain Red
+18	Video Gain Green
+1A	Video Gain Blue
+1C	Focus 
+20	Horizontal Position 
+22	Horizontal Size 
+24	Horizontal Pincushion 
+26	Horizontal Pincushion Balance 
+28	Horizontal Misconvergence 
+2A	Horizontal Linearity 
+2C	Horizontal Linearity Balance 
+30	Vertical Position 
+32	Vertical Size 
+34	Vertical Pincushion 
+36	Vertical Pincushion Balance 
+38	Vertical Misconvergence 
+3A	Vertical Linearity 
+3C	Vertical Linearity Balance 
+40	Parallelogram Distortion
+42	Trapezoidal Distortion
+44	Tilt
+46	Top Corner Distortion Control 
+48	Top Corner Distortion Balance 
+4A	Bottom Corner Distortion Control 
+4C	Bottom Corner Distortion Balance 
+56	Moiré Horizontal
+58	Moiré Vertical
+5E	Input Level Select
+60	Input Source Select
+62	Stereo Mode
+6C	Video Black Level Red
+6E	Video Black Level Green
+70	Video Black Level Blue
+71-FFFF	Reserved
