@@ -1,0 +1,58 @@
+Simulation Controls
+NORMAL
+00	Undefined
+01	Flight Simulation Device
+02	Automobile Simulation Device
+03	Tank Simulation Device
+04	Spaceship Simulation Device
+05	Submarine Simulation Device
+06	Sailing Simulation Device
+07	Motorcycle Simulation Device
+08	Sports Simulation Device
+09	Airplane Simulation Device
+0A	Helicopter Simulation Device
+0B	Magic Carpet Simulation Device
+0C	Bicycle
+0D-1F	reserved
+20	Flight Control Stick
+21	Flight Stick
+22	Cyclic Control
+23	Cyclic Trim
+24	Flight Yoke
+25	Track Control
+26	Driving Control
+27-CF	reserved
+B0	Aileron
+B1	Aileron Trim
+B2	Anti-Torque Control
+B3	Auto-pilot enable
+B4	Chaff Release
+B5	Collective Control
+B6	Dive Brake
+B7	Electronic Counter Measures
+B8	Elevator
+B9	Elevator Trim
+BA	Rudder
+BB	Throttle
+BC	Flight Communication
+BD	Flare Release
+BE	Landing Gear
+BF	Toe Brake
+C0	Trigger
+C1	Weapons Arm
+C2	Weapons Select
+C3	Wing Flaps
+C4	Accelerator
+C5	Brake
+C6	Clutch
+C7	Shifter
+C8	Steering
+C9	Turret Direction
+CA	Barrel Elevation
+CB	Dive Plane
+CC	Ballast
+CD	Bicycle Crank
+CE	Handle Bars
+CF	Front Brake
+D0	Rear Brake
+D1-FFFF	reserved

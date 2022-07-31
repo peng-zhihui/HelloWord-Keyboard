@@ -1,0 +1,17 @@
+VR Controls
+NORMAL
+00	Unidentified
+01	Belt
+02	Body Suit
+03	Flexor
+04	Glove
+05	Head Tracker
+06	Head Mounted Display
+07	Hand Tracker 
+08	Oculometer
+09	Vest
+0A	Animatronic Device
+0B-1F	Reserved 
+20	Stereo Enable
+21	Display Enable
+22-FFFF	Reserved

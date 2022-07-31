@@ -1,0 +1,16 @@
+Monitor
+NORMAL
+00	Undefined
+01	Monitor Control
+02	EDID Information
+03	VDIF Information
+04	VESA Version
+05	On Screen Display
+06	Auto Size Center
+07	Polarity Horz Synch
+08	Polarity Vert Synch
+09	Sync Type
+0A	Screen Position
+0B	Horizontal Frequency
+0C	Vertical Frequency
+0D-FFFF	Reserved

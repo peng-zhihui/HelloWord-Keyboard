@@ -1,0 +1,48 @@
+Generic Desktop
+NORMAL
+00	Undefined
+01	Pointer
+02	Mouse
+03	Reserved
+04	Joystick
+05	Game Pad
+06	Keyboard
+07	Keypad
+08-2F	Reserved
+30	X
+31	Y
+32	Z
+33	Rx
+34	Ry
+35	Rz
+36	Slider
+37	Dial
+38	Wheel
+39	Hat switch
+3A	Counted Buffer
+3B	Byte Count
+3C	Motion Wakeup
+3D-3F	Reserved
+40	Vx
+41	Vy
+42	Vz
+43	Vbrx
+44	Vbry
+45	Vbrx
+46	Vno
+47-7F	Reserved
+80	System Control
+81	System Power Down
+82	System Sleep
+83	System Wake Up
+84	System Context Menu
+85	System Main Menu
+86	System App Menu
+87	System Help Menu
+88	System Menu Exit
+89	System Menu Select
+8A	System Menu Right
+8B	System Menu Left
+8C	System Menu Up
+8D	System Menu Down
+8E-FFFF	Reserved

@@ -1,0 +1,31 @@
+Gaming Controls
+NORMAL
+00	Undefined
+01	3D Game Controller
+02	Pinball Device 
+03	Gun Device 
+04-1F	Reserved
+20	Point of View
+21	Turn Right/Left
+22	Pitch Right/Left
+23	Roll Forward/Backward
+24	Move Right/Left
+25	Move Forward/Backward
+26	Move Up/Down
+27	Lean Right/Left
+28	Lean Forward/Backward
+29	Height of POV
+2A	Flipper
+2B	Secondary Flipper
+2C	Bump
+2D	New Game
+2E	Shoot Ball
+2F	Player
+30	Gun Bolt
+31	Gun Clip
+32	Gun Selector
+33	Gun Single Shot
+34	Gun Burst
+35	Gun Automatic
+36	Gun Safety
+37-FFFF	reserved

@@ -1,0 +1,71 @@
+Telephony Devices
+NORMAL
+00	Unassigned
+01	Phone
+02	Answering Machine
+03	Message Controls
+04	Handset
+05	Headset
+06	Telephony Key Pad
+07	Programmable Button
+08-1F	Reserved
+20	Hook Switch
+21	Flash
+22	Feature
+23	Hold
+24	Redial
+25	Transfer
+26	Drop
+27	Park
+28	Forward Calls
+29	Alternate Function
+2A	Line
+2B	Speaker Phone
+2C	Conference
+2D	Ring Enable
+2E	Ring Select
+2F	Phone Mute
+30	Caller ID
+31-4F	Reserved
+50	Speed Dial
+51	Store Number
+52	Recall Number
+53	Phone Directory
+54-6F	Reserved
+70	Voice Mail
+71	Screen Calls
+72	Do Not Disturb
+73	Message
+74	Answer On/Off
+75-8F	Reserved
+90	Inside Dial Tone
+91	Outside Dial Tone
+92	Inside Ring Tone
+93	Outside Ring Tone
+94	Priority Ring Tone
+95	Inside Ringback
+96	Priority Ringback
+97	Line Busy Tone
+98	Reorder Tone
+99	Call Waiting Tone
+9A	Confirmation Tone 1
+9B	Confirmation Tone 2
+9C	Tones Off
+9D-AF	Reserved
+B0	Phone Key 0
+B1	Phone Key 1
+B2	Phone Key 2
+B3	Phone Key 3
+B4	Phone Key 4
+B5	Phone Key 5
+B6	Phone Key 6
+B7	Phone Key 7
+B8	Phone Key 8
+B9	Phone Key 9
+BA	Phone Key Star
+BB	Phone Key Pound
+BC	Phone Key A
+BD	Phone Key B
+BE	Phone Key C
+BF	Phone Key D
+C0-FFFF	Reserved
