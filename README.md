@@ -76,7 +76,11 @@ Software中提供了一些用于和键盘交互的电脑端上位机软件，包
 
 Tools主要是提供一些三方的工具软件，比如**STM32 ST-LINK Utility** 、用于安装驱动的**zadig**等等。
 
-#### 1.1.5 Docs
+#### 1.1.5 3D Model
+
+文件夹里是键盘用到的所有结构件的3D模型文件，可以用于3D打印。
+
+#### 1.1.6 Docs
 
 相关的参考文件，包括芯片的Datasheet等。
 
@@ -111,17 +115,15 @@ Tools主要是提供一些三方的工具软件，比如**STM32 ST-LINK Utility*
 
 使用JLink、STLink之类的调试器烧录，我在PCB和外壳上都预留了SWD调试口。对于没有硬件开发经验的同学，我晚点也会放出一个Bootloader，可以直接通过USB口进行固件升级。
 
-
-
 ## 3. 软件架构说明
+
+待补充。
 
 ## 4. SDK设计 & 二次开发
 
-
+待补充。
 
 > 感谢以下项目：
->
-> [opencv/opencv: Open Source Computer Vision Library (github.com)](https://github.com/opencv/opencv)
 >
 > [Lexikos/AutoHotkey_L: AutoHotkey - macro-creation and automation-oriented scripting utility for Windows. (github.com)](https://github.com/Lexikos/AutoHotkey_L)
 >
