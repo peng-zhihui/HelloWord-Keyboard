@@ -40,6 +40,8 @@
 
 Hardware文件夹内是瀚文键盘里面用到的所有电路的原理图和PCB文件，目前提供的是[立创EDA专业版](https://oshwhub.com/pengzhihui/helloword-smart-keyboard)格式的源文件以及Gerber格式的光绘文件用于提供给厂家进行直接加工。
 
+![hw0](5.Docs/2.Images/hw5.png)
+
 一共有如下几块板子：
 
 - **HelloWord-Keyboard**：主键盘的PCB，控制器为STM32F103，可以配合底座单独使用，提供常规按键输入功能，带全按键独立RGB灯。
