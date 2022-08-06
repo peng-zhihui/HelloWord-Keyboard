@@ -64,7 +64,7 @@ Firmware中提供了上面所有板子的固件源码，以及**预编译好的b
 
 工程都是基于STM32HAL实现的，所以提供了对应的`.ioc`文件，可以自行用STM32CubeMX打开，生成对应的keil或者STM32IDE工程文件。当让也可以像我一样，用CLion或者STM32CubeIDE进行编译和下载。
 
-`_Release`文件夹里是预编译好的bin文件，可以用**ST-Link Utillity**或者STM32CubeProgrammer之类的软件直接下载到芯片。
+`_Release`文件夹里是预编译好的bin文件，可以用**ST-Link Utillity**或者STM32CubeProgrammer、stm32flash (Windows、Linux、MacOS)之类的软件直接下载到芯片。
 
 关于固件的实现细节后文有讲解。
 
@@ -76,7 +76,7 @@ Software中提供了一些用于和键盘交互的电脑端上位机软件，包
 
 #### 1.1.4 Tools
 
-Tools主要是提供一些三方的工具软件，比如**STM32 ST-LINK Utility** 、用于安装驱动的**zadig**等等。
+Tools主要是提供一些三方的工具软件，比如**STM32 ST-LINK Utility**、**stm32flash** 、用于安装驱动的**zadig**等等。
 
 #### 1.1.5 3D Model
 
