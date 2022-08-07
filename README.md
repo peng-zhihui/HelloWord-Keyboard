@@ -40,6 +40,8 @@
 
 Hardware文件夹内是瀚文键盘里面用到的所有电路的原理图和PCB文件，目前提供的是[立创EDA专业版](https://oshwhub.com/pengzhihui/helloword-smart-keyboard)格式的源文件以及Gerber格式的光绘文件用于提供给厂家进行直接加工。
 
+![hw0](5.Docs/2.Images/hw5.png)
+
 一共有如下几块板子：
 
 - **HelloWord-Keyboard**：主键盘的PCB，控制器为STM32F103，可以配合底座单独使用，提供常规按键输入功能，带全按键独立RGB灯。
@@ -136,4 +138,6 @@ Tools主要是提供一些三方的工具软件，比如**STM32 ST-LINK Utility*
 > [olikraus/u8g2: U8glib library for monochrome displays, version 2 (github.com)](https://github.com/olikraus/u8g2)
 >
 > [simplefoc/Arduino FOC for BLDC  (github.com)](https://github.com/simplefoc/Arduino-FOC)
+>
+> [zhongyang219/TrafficMonitor: 这是一个用于显示当前网速、CPU及内存利用率的桌面悬浮窗软件，并支持任务栏显示，支持更换皮肤。 (github.com)](https://github.com/zhongyang219/TrafficMonitor)
 
