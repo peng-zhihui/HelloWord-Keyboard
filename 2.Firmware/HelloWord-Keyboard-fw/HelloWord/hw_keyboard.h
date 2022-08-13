@@ -87,29 +87,30 @@ public:
 
 
     int16_t keyMap[KEYMAP_NUM][IO_NUMBER] = {
-            // The first layer, used for aligning 74HC165 IO pins to PCB key layout
-        {67,  61, 60, 58, 59, 52, 55, 51, 50, 49, 48,  47,  46,  3,
-            80,           81,    64,    57,    62,    63,    53,    54,    45,    44,    40,    31,    26,    18,        2,
-            19,  70, 71, 66, 65, 56, 36, 37, 38, 39, 43, 42,           41,            28,        1,
-            15,       74, 73, 72, 68, 69, 29, 30, 35, 34, 33,         32,    24,    0,
-            14,         76, 77, 78, 79, 16, 20, 21, 22,    23,     27,    25,          17,       4,
-            13,        12,       8,        75,    9,         10,        7,  11,         6,          5,
+        // The first layer, used for aligning 74HC165 IO pins to PCB key layout
+        {67,61, 60, 58, 59, 52, 55, 51, 50, 49, 48,47,46,3,
+            80, 81,64,57,62,63,53,54,45,44,40,31,26,18,2,
+            19,70, 71, 66, 65, 56, 36, 37, 38, 39, 43, 42, 41,28,1,
+            15, 74, 73, 72, 68, 69, 29, 30, 35, 34, 33, 32,24,0,
+            14, 76, 77, 78, 79, 16, 20, 21, 22,23, 27,25,17, 4,
+            13,12, 8,75,9, 10,7,11, 6,5,
             85},
 
-            // Other layer, used for mapping default key layout to custom layout
+        // Other layer, used for mapping default key layout to custom layout
         {ESC, F1, F2, F3, F4, F5, F6, F7, F8, F9, F10, F11, F12, PAUSE,
             GRAVE_ACCENT, NUM_1, NUM_2, NUM_3, NUM_4, NUM_5, NUM_6, NUM_7, NUM_8, NUM_9, NUM_0, MINUS, EQUAL, BACKSPACE, INSERT,
-            TAB, Q,  W,  E,  R,  T,  Y,  U,  I,  O,  P,  LEFT_U_BRACE, RIGHT_U_BRACE, BACKSLASH, DELETE,
-            CAP_LOCK, A,  S,  D,  F,  G,  H,  J,  K,  L,  SEMI_COLON, QUOTE, ENTER, PAGE_UP,
-            LEFT_SHIFT, Z,  X,  C,  V,  B,  N,  M,  COMMA, PERIOD, SLASH, RIGHT_SHIFT, UP_ARROW, PAGE_DOWN,
+            TAB, Q,W,E,R,T,Y,U,I,O,P,LEFT_U_BRACE, RIGHT_U_BRACE, BACKSLASH, DELETE,
+            CAP_LOCK, A,S,D,F,G,H,J,K,L,SEMI_COLON, QUOTE, ENTER, PAGE_UP,
+            LEFT_SHIFT, Z,X,C,V,B,N,M,COMMA, PERIOD, SLASH, RIGHT_SHIFT, UP_ARROW, PAGE_DOWN,
             LEFT_CTRL, LEFT_GUI, LEFT_ALT, SPACE, RIGHT_ALT, RIGHT_GUI, FN, LEFT_ARROW, DOWN_ARROW, RIGHT_ARROW,
             LEFT_ARROW},
-        {ESC, F1, F2, F3, F4, F5, F6, F7, F8, F9, F10, F11, F12, PAUSE,
+
+            {ESC, F1, F2, F3, F4, F5, F6, F7, F8, F9, F10, F11, F12, PAUSE,
             GRAVE_ACCENT, NUM_1, NUM_2, NUM_3, NUM_4, NUM_5, NUM_6, NUM_7, NUM_8, NUM_9, NUM_0, MINUS, EQUAL, BACKSPACE, INSERT,
-            TAB, Q,  W,  E,  R,  T,  Y,  U,  I,  O,  P,  LEFT_U_BRACE, RIGHT_U_BRACE, BACKSLASH, DELETE,
-            CAP_LOCK, A,  S,  D,  F,  G,  H,  J,  K,  L,  SEMI_COLON, QUOTE, ENTER, PAGE_UP,
-            LEFT_SHIFT, Z,  X,  C,  V,  B,  N,  M,  COMMA, PERIOD, SLASH, RIGHT_SHIFT, A,        PAGE_DOWN,
-            LEFT_CTRL, LEFT_GUI, LEFT_ALT, SPACE, RIGHT_ALT, RIGHT_GUI, FN, LEFT_ARROW, C,          RIGHT_ARROW,
+            TAB, Q,W,E,R,T,Y,U,I,O,P,LEFT_U_BRACE, RIGHT_U_BRACE, BACKSLASH, DELETE,
+            CAP_LOCK, A,S,D,F,G,H,J,K,L,SEMI_COLON, QUOTE, ENTER, PAGE_UP,
+            LEFT_SHIFT, Z,X,C,V,B,N,M,COMMA, PERIOD, SLASH, RIGHT_SHIFT, A,PAGE_DOWN,
+            LEFT_CTRL, LEFT_GUI, LEFT_ALT, SPACE, RIGHT_ALT, RIGHT_GUI, FN, LEFT_ARROW, C,RIGHT_ARROW,
             LEFT_ARROW}
     };
 
