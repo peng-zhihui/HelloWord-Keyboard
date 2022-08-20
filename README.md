@@ -28,6 +28,10 @@
 
 ### 1.0 更新说明：
 
+**22.8.20更新：**
+
+* PCB工程更新，见仓库的工程链接，所有元器件能在立创直接下单的都改成了对应的封装，方便大家配置BOM.
+
 **22.8.13更新：**
 
 * 新打样的PCB已经收到，但是由于何同学这周发视频，为了避免带来不必要的压力，所以决定错峰下周六再把PCB工程更新（doge）.
@@ -42,7 +46,7 @@
 
 #### 1.1.1 Hardware
 
-Hardware文件夹内是瀚文键盘里面用到的所有电路的原理图和PCB文件，目前提供的是[立创EDA专业版](https://oshwhub.com/pengzhihui/helloword-smart-keyboard)格式的源文件以及Gerber格式的光绘文件用于提供给厂家进行直接加工。
+Hardware文件夹内是瀚文键盘里面用到的所有电路的原理图和PCB文件，目前提供的是[立创EDA专业版](https://oshwhub.com/pengzhihui/b11afae464c54a3e8d0f77e1f92dc7b7)格式的源文件以及Gerber格式的光绘文件用于提供给厂家进行直接加工。
 
 ![hw0](5.Docs/2.Images/hw5.png)
 

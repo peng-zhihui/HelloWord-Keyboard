@@ -1,2 +1,1 @@
-完整工程会等我修复版PCB打样验证ok之后发出，大家可以先参考原理图。
-https://oshwhub.com/pengzhihui/helloword-smart-keyboard
+完整工程在：https://oshwhub.com/pengzhihui/b11afae464c54a3e8d0f77e1f92dc7b7
