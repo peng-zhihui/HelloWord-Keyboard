@@ -94,7 +94,7 @@ public:
             15, 74, 73, 72, 68, 69, 29, 30, 35, 34, 33, 32,24,0,
             14, 76, 77, 78, 79, 16, 20, 21, 22,23, 27,25,17, 4,
             13,12, 8,75,9, 10,7,11, 6,5,
-            85},
+            82,83,84,85,86,87},
 
         // Other layer, used for mapping default key layout to custom layout
         {ESC, F1, F2, F3, F4, F5, F6, F7, F8, F9, F10, F11, F12, PAUSE,
@@ -103,7 +103,7 @@ public:
             CAP_LOCK, A,S,D,F,G,H,J,K,L,SEMI_COLON, QUOTE, ENTER, PAGE_UP,
             LEFT_SHIFT, Z,X,C,V,B,N,M,COMMA, PERIOD, SLASH, RIGHT_SHIFT, UP_ARROW, PAGE_DOWN,
             LEFT_CTRL, LEFT_GUI, LEFT_ALT, SPACE, RIGHT_ALT, RIGHT_GUI, FN, LEFT_ARROW, DOWN_ARROW, RIGHT_ARROW,
-            LEFT_ARROW},
+            PAD_NUM_1,PAD_NUM_2,PAD_NUM_3,PAD_NUM_4,PAD_NUM_5,PAD_NUM_6},
 
             {ESC, F1, F2, F3, F4, F5, F6, F7, F8, F9, F10, F11, F12, PAUSE,
             GRAVE_ACCENT, NUM_1, NUM_2, NUM_3, NUM_4, NUM_5, NUM_6, NUM_7, NUM_8, NUM_9, NUM_0, MINUS, EQUAL, BACKSPACE, INSERT,
@@ -111,7 +111,7 @@ public:
             CAP_LOCK, A,S,D,F,G,H,J,K,L,SEMI_COLON, QUOTE, ENTER, PAGE_UP,
             LEFT_SHIFT, Z,X,C,V,B,N,M,COMMA, PERIOD, SLASH, RIGHT_SHIFT, A,PAGE_DOWN,
             LEFT_CTRL, LEFT_GUI, LEFT_ALT, SPACE, RIGHT_ALT, RIGHT_GUI, FN, LEFT_ARROW, C,RIGHT_ARROW,
-            LEFT_ARROW}
+            PAD_NUM_1,PAD_NUM_2,PAD_NUM_3,PAD_NUM_4,PAD_NUM_5,PAD_NUM_6}
     };
 
     volatile bool isRgbTxBusy{};
