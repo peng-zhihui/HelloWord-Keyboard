@@ -40,7 +40,7 @@ void Main()
         else if (t < 1) fadeDir = true;
 
         for (uint8_t i = 0; i < HWKeyboard::LED_NUMBER; i++)
-            keyboard.SetRgbBuffer(i, HWKeyboard::Color_t{(uint8_t) t, 50, 0});
+            keyboard.SetRgbBufferByID(i, HWKeyboard::Color_t{(uint8_t) t, 50, 0});
         /*-----------------------------------*/
 
         // Send RGB buffers to LEDs
@@ -54,6 +54,15 @@ extern "C" void OnTimerCallback() // 1000Hz callback
     keyboard.ScanKeyStates();  // Around 40us use 4MHz SPI clk
     keyboard.ApplyDebounceFilter(100);
     keyboard.Remap(keyboard.FnPressed() ? 2 : 1);  // When Fn pressed use layer-2
+
+    if (keyboard.KeyPressed(HWKeyboard::LEFT_CTRL) &&
+        keyboard.KeyPressed(HWKeyboard::A))
+    {
+        // do something...
+
+        // or trigger some keys...
+        keyboard.Press(HWKeyboard::DELETE);
+    }
 
     // Report HID key states
     USBD_CUSTOM_HID_SendReport(&hUsbDeviceFS,
