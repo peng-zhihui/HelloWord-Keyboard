@@ -1,4 +1,5 @@
 #include "motor.h"
+#include "st_hardware.h"
 #include <cmath>
 
 
@@ -125,6 +126,7 @@ bool Motor::AlignSensor()
 {
     if (encoder->countDirection == EncoderBase::UNKNOWN)
     {
+        SetPowerMotor(true);
         HAL_Delay(100);
 
         // Find natural direction
@@ -149,6 +151,7 @@ bool Motor::AlignSensor()
         float endAngle = encoder->GetFullAngle();
 
         SetPhaseVoltage(0, 0, 0);
+        SetPowerMotor(false);
         HAL_Delay(200);
 
         // Determine the direction the sensor moved
@@ -177,6 +180,7 @@ bool Motor::AlignSensor()
     // Align the electrical phases of the motor and sensor
     if (!ASSERT(zeroElectricAngleOffset))
     {
+        SetPowerMotor(true);
         // Set angle -90(270 = 3PI/2) degrees
         SetPhaseVoltage(config.voltageUsedForSensorAlign, 0, _3PI_2);
 
@@ -186,6 +190,7 @@ bool Motor::AlignSensor()
         zeroElectricAngleOffset = GetElectricalAngle();
 
         SetPhaseVoltage(0, 0, 0);
+        SetPowerMotor(false);
         HAL_Delay(200);
     }
 
