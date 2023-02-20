@@ -27,6 +27,13 @@
 ## 1. 项目说明
 
 ### 1.0 更新说明：
+**23.2.20更新**
+* 修改`CUSTOM_HID_EPOUT_ADDR = 2`，HID_RxCpltCallback位置变更到CUSTOM_HID_OutEvent_FS中（原来的位置可能导致while循环内无法发送report）。
+
+  > * main里面增加了RGB控制相关代码，可以通过HID协议发送数据包来控制键盘RGB效果
+  > * 已对接SignalRGB，Software中添加SignalRGB插件
+  > * report包大小33字节，前三个字节依次为reportid(本项目为2)、控制命令（0xAC（上位机控制），0xBD（关闭上位机控制），report包次序（一个包最多传10个RGB值，需要多个包拼接，从0计算）；后30字节为RGB值。
+
 
 **22.8.31更新：**
 
