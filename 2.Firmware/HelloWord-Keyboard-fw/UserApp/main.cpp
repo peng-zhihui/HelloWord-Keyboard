@@ -7,7 +7,8 @@
 KeyboardConfig_t config;
 HWKeyboard keyboard(&hspi1);
 
-
+static bool isSoftWareControlColor = false;
+static bool isReceiveSuccess = false;
 /* Main Entry ----------------------------------------------------------------*/
 void Main()
 {
@@ -39,12 +40,19 @@ void Main()
         if (t > 250) fadeDir = false;
         else if (t < 1) fadeDir = true;
 
-        for (uint8_t i = 0; i < HWKeyboard::LED_NUMBER; i++)
-            keyboard.SetRgbBufferByID(i, HWKeyboard::Color_t{(uint8_t) t, 50, 0});
-        /*-----------------------------------*/
+        if(isReceiveSuccess){
+            keyboard.SyncLights();
+            isReceiveSuccess = false;
+        }
+        if(!isSoftWareControlColor)
+        {
 
-        // Send RGB buffers to LEDs
-        keyboard.SyncLights();
+            /*---- This is a demo RGB effect ----*/
+            for (uint8_t i = 0; i < HWKeyboard::LED_NUMBER; i++)
+                keyboard.SetRgbBufferByID(i, HWKeyboard::Color_t{(uint8_t)t, 50, 20});
+            /*-----------------------------------*/
+            keyboard.SyncLights();
+        }
     }
 }
 
@@ -80,5 +88,17 @@ void HAL_SPI_TxCpltCallback(SPI_HandleTypeDef* hspi)
 extern "C"
 void HID_RxCpltCallback(uint8_t* _data)
 {
-
+    if(_data[1] == 0xbd)  isSoftWareControlColor= false;
+    if(_data[1] == 0xac) {
+        isSoftWareControlColor = true;
+        uint8_t pageIndex = _data[2];
+        for (uint8_t i = 0; i < 10; i++) {
+            if(i+pageIndex*10>=HWKeyboard::LED_NUMBER) {
+                isReceiveSuccess = true;
+                break;
+            }
+            keyboard.SetRgbBufferByID(i+pageIndex*10,
+                                      HWKeyboard::Color_t{_data[3+i*3], _data[4+i*3], _data[5+i*3]});
+        }
+    }
 }
