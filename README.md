@@ -27,6 +27,10 @@
 ## 1. 项目说明
 
 ### 1.0 更新说明：
+**23.2.27更新：**
+
+* 为键盘主体添加OpenRGB支持，需使用项目中提供的OpenRGB.
+
 **23.2.20更新**
 * 修改`CUSTOM_HID_EPOUT_ADDR = 2`，HID_RxCpltCallback位置变更到CUSTOM_HID_OutEvent_FS中（原来的位置可能导致while循环内无法发送report）。
 
