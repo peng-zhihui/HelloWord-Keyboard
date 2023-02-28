@@ -235,7 +235,12 @@ static int8_t CUSTOM_HID_DeInit_FS(void)
 static int8_t CUSTOM_HID_OutEvent_FS(uint8_t event_idx, uint8_t state)
 {
     /* USER CODE BEGIN 6 */
-
+    uint8_t  USB_Received_Count = USBD_GetRxCount( &hUsbDeviceFS,CUSTOM_HID_EPOUT_ADDR );
+    USBD_CUSTOM_HID_HandleTypeDef   *hhid;
+    hhid = (USBD_CUSTOM_HID_HandleTypeDef*)hUsbDeviceFS.pClassData;
+    if(USB_Received_Count>0){
+        HID_RxCpltCallback(hhid->Report_buf);
+    }
 
     return (USBD_OK);
     /* USER CODE END 6 */

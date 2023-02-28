@@ -88,7 +88,7 @@ void HAL_SPI_TxCpltCallback(SPI_HandleTypeDef* hspi)
 extern "C"
 void HID_RxCpltCallback(uint8_t* _data)
 {
-    if(_data[1] == 0xbd)  isSoftWareControlColor= false;
+    isSoftWareControlColor= false;
     if(_data[1] == 0xac) {
         isSoftWareControlColor = true;
         uint8_t pageIndex = _data[2];
