@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="CMakePresetLoader"><![CDATA[{
+  "useNewFormat": true
+}]]></component>
   <component name="CMakeReloadState">
     <option name="reloaded" value="true" />
   </component>
@@ -18,10 +21,6 @@
   <component name="ChangeListManager">
     <list default="true" id="064cb8dd-c74c-418a-a862-af96d67ded4c" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BSP/u8g2/cpp/U8g2lib.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/BSP/u8g2/cpp/U8g2lib.hpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ctrl/Motor/knob.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Ctrl/Motor/knob.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ctrl/Motor/knob.h" beforeDir="false" afterPath="$PROJECT_DIR$/Ctrl/Motor/knob.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserApp/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/UserApp/main.cpp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,15 +58,18 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.cidr.known.project.marker": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "true",
     "cf.first.check.clang-format": "false",
     "cidr.known.project.marker": "true",
     "cmake.loaded.for.project": "true",
-    "last_opened_file_path": "E:/OnWorking/HelloWord-Keyboard/2.Firmware/HelloWord-Dynamic-fw/Ctrl/Motor",
+    "last_opened_file_path": "D:/DEV_TOOLS/Projets/HelloWord-Keyboard/2.Firmware/HelloWord-Keyboard-fw",
     "settings.editor.selected.configurable": "CMakeSettings",
-    "structure.view.defaults.are.configured": "true"
+    "structure.view.defaults.are.configured": "true",
+    "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
   <component name="RecentsManager">
@@ -87,9 +89,19 @@
     </key>
   </component>
   <component name="RunManager">
-    <configuration default="true" type="CLionExternalRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true">
+    <configuration default="true" type="lua.app" factoryName="Lua Application">
+      <option name="program" value="lua.exe" />
+      <option name="file" value="" />
+      <option name="workingDir" value="$PROJECT_DIR$/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ex.h" />
+      <option name="debuggerType" value="1" />
+      <option name="params" value="" />
+      <option name="charset" value="UTF-8" />
+      <option name="showConsole" value="true" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true">
       <method v="2">
-        <option name="CLION.EXTERNAL.BUILD" enabled="true" />
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
     <configuration default="true" type="PythonConfigurationType" factoryName="Python">
@@ -131,16 +143,6 @@
       <method v="2">
         <option name="CLION.COMPOUND.BUILD" enabled="true" />
       </method>
-    </configuration>
-    <configuration default="true" type="lua.app" factoryName="Lua Application">
-      <option name="program" value="lua.exe" />
-      <option name="file" value="" />
-      <option name="workingDir" value="$PROJECT_DIR$/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ex.h" />
-      <option name="debuggerType" value="1" />
-      <option name="params" value="" />
-      <option name="charset" value="UTF-8" />
-      <option name="showConsole" value="true" />
-      <method v="2" />
     </configuration>
     <configuration default="true" type="tests" factoryName="Autodetect">
       <module name="HelloWord-Dynamic-fw" />
@@ -279,6 +281,7 @@
       <workItem from="1658479549618" duration="6478000" />
       <workItem from="1658499259416" duration="4546000" />
       <workItem from="1659172165877" duration="1356000" />
+      <workItem from="1676859689038" duration="190000" />
     </task>
     <servers />
   </component>

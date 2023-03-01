@@ -69,9 +69,11 @@ uint8_t* HWKeyboard::Remap(uint8_t _layer)
     }
 
     memset(hidBuffer, 0, KEY_REPORT_SIZE);
-    for (int i = 0; i < IO_NUMBER / 8; i++)
+
+    int i = 0, j = 0;
+    while (8 * i + j < IO_NUMBER - 6)
     {
-        for (int j = 0; j < 8; j++)
+        for (j = 0; j < 8; j++)
         {
             index = (int16_t) (keyMap[_layer][i * 8 + j] / 8 + 1); // +1 for modifier
             bitIndex = (int16_t) (keyMap[_layer][i * 8 + j] % 8);
@@ -85,6 +87,8 @@ uint8_t* HWKeyboard::Remap(uint8_t _layer)
             if (remapBuffer[i] & (0x80 >> j))
                 hidBuffer[index + 1] |= 1 << (bitIndex); // +1 for Report-ID
         }
+        i++;
+        j = 0;
     }
 
     return hidBuffer;
@@ -97,13 +101,19 @@ bool HWKeyboard::FnPressed()
 }
 
 
-void HWKeyboard::SetRgbBuffer(uint8_t _keyId, HWKeyboard::Color_t _color)
+void HWKeyboard::SetRgbBufferByID(uint8_t _keyId, HWKeyboard::Color_t _color, float _brightness)
 {
+    // To ensure there's no sequence zero bits, otherwise will case ws2812b protocol error.
+    if (_color.b < 1)_color.b = 1;
+
     for (int i = 0; i < 8; i++)
     {
-        rgbBuffer[_keyId][0][i] = (_color.g >> brightnessPrediv) & (0x80 >> i) ? WS_HIGH : WS_LOW;
-        rgbBuffer[_keyId][1][i] = (_color.r >> brightnessPrediv) & (0x80 >> i) ? WS_HIGH : WS_LOW;
-        rgbBuffer[_keyId][2][i] = (_color.b >> brightnessPrediv) & (0x80 >> i) ? WS_HIGH : WS_LOW;
+        rgbBuffer[_keyId][0][i] =
+            ((uint8_t) ((float) _color.g * _brightness) >> brightnessPreDiv) & (0x80 >> i) ? WS_HIGH : WS_LOW;
+        rgbBuffer[_keyId][1][i] =
+            ((uint8_t) ((float) _color.r * _brightness) >> brightnessPreDiv) & (0x80 >> i) ? WS_HIGH : WS_LOW;
+        rgbBuffer[_keyId][2][i] =
+            ((uint8_t) ((float) _color.b * _brightness) >> brightnessPreDiv) & (0x80 >> i) ? WS_HIGH : WS_LOW;
     }
 }
 
@@ -133,3 +143,71 @@ uint8_t* HWKeyboard::GetHidReportBuffer(uint8_t _reportId)
             return hidBuffer;
     }
 }
+
+
+bool HWKeyboard::KeyPressed(KeyCode_t _key)
+{
+    int index, bitIndex;
+
+    if (_key < RESERVED)
+    {
+        index = _key / 8;
+        bitIndex = (_key + 8) % 8;
+    } else
+    {
+        index = _key / 8 + 1;
+        bitIndex = _key % 8;
+    }
+
+    return hidBuffer[index + 1] & (1 << bitIndex);
+}
+
+
+void HWKeyboard::Press(HWKeyboard::KeyCode_t _key)
+{
+    int index, bitIndex;
+
+    if (_key < RESERVED)
+    {
+        index = _key / 8;
+        bitIndex = (_key + 8) % 8;
+    } else
+    {
+        index = _key / 8 + 1;
+        bitIndex = _key % 8;
+    }
+
+    hidBuffer[index + 1] |= (1 << bitIndex);
+}
+
+
+void HWKeyboard::Release(HWKeyboard::KeyCode_t _key)
+{
+    int index, bitIndex;
+
+    if (_key < RESERVED)
+    {
+        index = _key / 8;
+        bitIndex = (_key + 8) % 8;
+    } else
+    {
+        index = _key / 8 + 1;
+        bitIndex = _key % 8;
+    }
+
+    hidBuffer[index + 1] &= ~(1 << bitIndex);
+}
+
+
+uint8_t HWKeyboard::GetTouchBarState(uint8_t _id)
+{
+    uint8_t tmp = (remapBuffer[10] & 0b00000001) << 5 |
+                  (remapBuffer[10] & 0b00000010) << 3 |
+                  (remapBuffer[10] & 0b00000100) << 1 |
+                  (remapBuffer[10] & 0b00001000) >> 1 |
+                  (remapBuffer[10] & 0b00010000) >> 3 |
+                  (remapBuffer[10] & 0b00100000) >> 5;
+    return _id == 0 ? tmp : (tmp & (1 << (_id - 1)));
+}
+
+
