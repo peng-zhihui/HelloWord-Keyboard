@@ -151,7 +151,7 @@ bool HWKeyboard::KeyPressed(KeyCode_t _key)
 
     if (_key < RESERVED)
     {
-        index = _key / 8;
+        index = 0;
         bitIndex = (_key + 8) % 8;
     } else
     {
@@ -169,7 +169,7 @@ void HWKeyboard::Press(HWKeyboard::KeyCode_t _key)
 
     if (_key < RESERVED)
     {
-        index = _key / 8;
+        index = 0;
         bitIndex = (_key + 8) % 8;
     } else
     {
@@ -187,7 +187,7 @@ void HWKeyboard::Release(HWKeyboard::KeyCode_t _key)
 
     if (_key < RESERVED)
     {
-        index = _key / 8;
+        index = 0;
         bitIndex = (_key + 8) % 8;
     } else
     {
